@@ -19,7 +19,7 @@ public:
         return bouq>=m;
     }
     int minDays(vector<int>& bloomDays, int m, int k) {
-        long long total=m*k;
+        long long total=1LL*m*k;
         if(total>bloomDays.size())return -1;
         int mini=*min_element(bloomDays.begin(),bloomDays.end());
         int maxi=*max_element(bloomDays.begin(),bloomDays.end());
